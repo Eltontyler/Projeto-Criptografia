@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}   
+:root {
+    --font:'Cooper Black', sans-serif;
+    --cor-primaria: white;
+    --cor-segundaria: yellow;
+    --cor-tercearia: black;
+    --cor-rodape: blue;
+    --cor-button: red;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./imagens/fundo.png');
+    background-size: 100%;
+    background-repeat: repeat;
+    font-family: 'TheBlowar-Regular' sans-serif;
+}
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    padding: 1%;
+    margin-right: 35%;
+    text-shadow:1px 1px 1px black, -1px 1px 1px black ;
+}
+.cabecalho h1 {
+    margin-top: 3%;
+    text-decoration: underline;
+    color: var(--cor-primaria);
+}
+.subtexto {
+    text-align: center;
+    color: var(--cor-segundaria);
+    font-size: 20px;
+}
+
+.cabecalho img {
+    max-width: 100px;
+    max-height: 100px;
+    width: auto;
+    height: auto;
+    border: 3px solid var(--cor-tercearia);
+    border-radius: 50px;
+}
+
+.container_input {
+    display: flex;
+    justify-content: space-between;
+    padding: 3% 0 0 4%;
+    color:red; 
+}
+
+.container_input .input {
+    width: 400px;
+    height: 330px;
+    border: 3px solid var(--cor-tercearia);
+    border-radius: 20px;
+}
+
+#input_texto {
+    width: 345px;
+    height: 330px;
+    font-size: 20px;
+    color: white;
+    background: none;
+    box-shadow: none;
+    border: none;
+    outline: 0;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+#output {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid var(--cor-tercearia);
+    border-radius: 20px;
+    width: 360px;
+    height: 400px;
+    margin-right: 5%;
+}
+
+#output h2 {
+    font-family: var(--font);
+    text-align: center;
+    font-size: 25px;
+    color: var(--cor-primaria);
+    margin-top: 10%;
+    text-shadow: 1px 1px 1px black, -1px 1px 1px black, 1px -1px 1px black;
+}
+
+#output span {
+    font-size: 20px;
+    text-align: center;
+    text-shadow: 1px 1px 1px black, -1px 1px 1px black, 1px -1px 1px black;
+    color: var(--cor-primaria)
+}
+
+#output img {
+    max-width: 200px;
+    max-height: 200px;
+    width: auto;
+    height: auto;
+    margin-top: 5%;
+    margin-left: 20% ;
+}
+
+.btn_criptografar {
+    border: 2px solid black;
+    border-radius: 10px;
+    text-decoration: none;
+    width: 150px;
+    height: 50px;
+    margin-left: 4%;
+    color: var(--cor-primaria);
+    cursor: pointer;
+    background-color: red;
+}
+
+.btn_descriptografar {
+    border: 2px solid black;
+    border-radius: 10px;
+    text-decoration: none;
+    width: 150px;
+    height: 50px;
+    margin-left: 4%;
+    color: var(--cor-primaria);
+    cursor: pointer;
+    background-color: green;
+} 
+
+.btn_copiar {
+    border: 2px solid black;
+    border-radius: 10px;
+    text-decoration: none;
+    width: 150px;
+    height: 50px;
+    margin: 5%;
+    margin-left:30%;
+    color: var(--cor-primaria);
+    cursor: pointerce;
+    background-color: red;
+}
+
+.container_btn button:hover {
+    border: 2px solid var(--cor-primaria);
+    transition: 0.5s all;
+}
+
+.btn_copiar:hover{
+    border: 2px solid var(--cor-primaria);
+    transition: 0.5s all;
+    
+}
+.rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5%;
+    margin-top: 20px;
+    color: var(--cor-primaria);
+    height: 40px;
+}
+
+.rodape h3{
+    font-size: 30px;
+    color:var(--cor-primaria);
+    font-family: 'Blowar', sans-serif;
+    text-shadow: 2px 2px 2px black, -2px 2px 2px black, 2px -2px 2px black;
+    text-decoration: underline;
+}
+
+.icons ion-icon {
+    width: 30px;
+    height: 30px;
+    color: var(--cor-primaria);
+}
+
+.icons ion-icon:hover {
+    color: var(--cor-button);
+}
